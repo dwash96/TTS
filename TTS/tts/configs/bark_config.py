@@ -68,7 +68,7 @@ class BarkConfig(BaseTTSConfig):
     COARSE_SEMANTIC_PAD_TOKEN: int = 12_048
     COARSE_INFER_TOKEN: int = 12_050
 
-    REMOTE_BASE_URL = "https://huggingface.co/erogol/bark/tree/main/"
+    REMOTE_BASE_URL = "https://dl.suno-models.io/bark/models/v0"
     REMOTE_MODEL_PATHS: Dict = None
     LOCAL_MODEL_PATHS: Dict = None
     SMALL_REMOTE_MODEL_PATHS: Dict = None
