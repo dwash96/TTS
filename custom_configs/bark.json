@@ -171,15 +171,15 @@
     "COARSE_INFER_TOKEN": 12050,
     "REMOTE_MODEL_PATHS": {
         "text": {
-            "path": "https://huggingface.co/erogol/bark/tree/main/text_2.pt",
+            "path": "https://dl.suno-models.io/bark/models/v0/text_2.pt",
             "checksum": "54afa89d65e318d4f5f80e8e8799026a"
         },
         "coarse": {
-            "path": "https://huggingface.co/erogol/bark/tree/main/coarse_2.pt",
+            "path": "https://dl.suno-models.io/bark/models/v0/coarse_2.pt",
             "checksum": "8a98094e5e3a255a5c9c0ab7efe8fd28"
         },
         "fine": {
-            "path": "https://huggingface.co/erogol/bark/tree/main/fine_2.pt",
+            "path": "https://dl.suno-models.io/bark/models/v0/fine_2.pt",
             "checksum": "59d184ed44e3650774a2f0503a48a97b"
         }
     },
@@ -192,13 +192,13 @@
     },
     "SMALL_REMOTE_MODEL_PATHS": {
         "text": {
-            "path": "https://huggingface.co/erogol/bark/tree/main/text.pt"
+            "path": "https://dl.suno-models.io/bark/models/v0/text.pt"
         },
         "coarse": {
-            "path": "https://huggingface.co/erogol/bark/tree/main/coarse.pt"
+            "path": "https://dl.suno-models.io/bark/models/v0/coarse.pt"
         },
         "fine": {
-            "path": "https://huggingface.co/erogol/bark/tree/main/fine.pt"
+            "path": "https://dl.suno-models.io/bark/models/v0/fine.pt"
         }
     },
     "CACHE_DIR": "/root/.local/share/tts/suno/bark_v0"
