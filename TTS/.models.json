@@ -47,7 +47,7 @@
                         "https://coqui.gateway.scarf.sh/hf/bark/coarse_2.pt",
                         "https://coqui.gateway.scarf.sh/hf/bark/fine_2.pt",
                         "https://coqui.gateway.scarf.sh/hf/text_2.pt",
-                        "https://coqui.gateway.scarf.sh/hf/bark/config.json",
+                        "https://raw.githubusercontent.com/dwash96/TTS/dev/custom_configs/bark.json",
                         "https://coqui.gateway.scarf.sh/hf/bark/hubert.pt",
                         "https://coqui.gateway.scarf.sh/hf/bark/tokenizer.pth"
                     ],
