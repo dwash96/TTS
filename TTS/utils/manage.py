@@ -316,11 +316,6 @@ class ModelManager(object):
 
     def create_dir_and_download_model(self, model_name, model_item, output_path):
         os.makedirs(output_path, exist_ok=True)
-        # handle TOS
-        if not self.tos_agreed(model_item, output_path):
-            if not self.ask_tos(output_path):
-                os.rmdir(output_path)
-                raise Exception(" [!] You must agree to the terms of service to use this model.")
         print(f" > Downloading model to {output_path}")
         try:
             if "fairseq" in model_name:
