@@ -308,27 +308,10 @@ class ModelManager(object):
 
     @staticmethod
     def ask_tos(model_full_path):
-        """Ask the user to agree to the terms of service"""
-        tos_path = os.path.join(model_full_path, "tos_agreed.txt")
-        print(" > You must confirm the following:")
-        print(' | > "I have purchased a commercial license from Coqui: licensing@coqui.ai"')
-        print(' | > "Otherwise, I agree to the terms of the non-commercial CPML: https://coqui.ai/cpml" - [y/n]')
-        answer = input(" | | > ")
-        if answer.lower() == "y":
-            with open(tos_path, "w", encoding="utf-8") as f:
-                f.write("I have read, understood and agreed to the Terms and Conditions.")
-            return True
-        return False
+
 
     @staticmethod
     def tos_agreed(model_item, model_full_path):
-        """Check if the user has agreed to the terms of service"""
-        if "tos_required" in model_item and model_item["tos_required"]:
-            tos_path = os.path.join(model_full_path, "tos_agreed.txt")
-            if os.path.exists(tos_path) or os.environ.get("COQUI_TOS_AGREED") == "1":
-                return True
-            return False
-        return True
 
     def create_dir_and_download_model(self, model_name, model_item, output_path):
         os.makedirs(output_path, exist_ok=True)
