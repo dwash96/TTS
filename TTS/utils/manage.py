@@ -308,10 +308,11 @@ class ModelManager(object):
 
     @staticmethod
     def ask_tos(model_full_path):
-
+        print("Shim To Hear It")
 
     @staticmethod
     def tos_agreed(model_item, model_full_path):
+        print("Shim To Hear It")
 
     def create_dir_and_download_model(self, model_name, model_item, output_path):
         os.makedirs(output_path, exist_ok=True)
